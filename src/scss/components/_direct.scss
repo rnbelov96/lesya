@@ -1,0 +1,99 @@
+.direct {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background-color: #f3f3f3;
+  @include bg;
+  background-image: url('/src/img/bgs/direct-bg.jpg');
+
+  @media (max-width: 650px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.direct__title {
+  @include title;
+  margin-bottom: 16px;
+}
+
+.direct__text {
+  margin-bottom: 44px;
+
+  @include mobile-mb;
+}
+
+.direct__list {
+  @include reset-list;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+
+  @include mobile-mb;
+
+  @media (max-width: 650px) {
+    gap: 20px;
+  }
+}
+
+.direct__item {
+  min-height: 494px;
+  background: #ffffff;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  @include max-width(350px);
+  position: relative;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  justify-content: flex-start;
+
+  @media (max-width: 650px) {
+    min-height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 20px;
+  }
+
+  &::before {
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+    border: 1px $gold solid;
+    border-radius: 8px;
+    position: absolute;
+    @include central-align;
+    pointer-events: none;
+    content: '';
+  }
+
+  &:nth-child(2) {
+    justify-content: flex-end;
+  }
+}
+
+.direct__item-img {
+  width: 100%;
+  height: auto;
+}
+
+.direct__item-title {
+  font-weight: 400;
+  font-family: 'Copyright House Industries';
+  font-size: 40px;
+  line-height: 0.9;
+  color: $gold;
+  margin-bottom: 24px;
+  text-align: center;
+
+  @media (max-width: 650px) {
+    font-size: 24px !important;
+    margin-bottom: 15px;
+  }
+}
+
+.direct__item-text {
+  margin-bottom: 0;
+  text-align: center;
+}
