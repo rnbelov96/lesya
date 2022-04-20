@@ -23,6 +23,18 @@
     font-size: 13px;
   }
 
+  &_file {
+    padding-right: 79px;
+    padding-left: 28px;
+
+    &::before {
+      content: url('/src/img/icons/form/docs.svg');
+      position: absolute;
+      top: 10px;
+      right: 45px;
+    }
+  }
+
   &:hover {
     background: linear-gradient(
         0deg,
@@ -33,7 +45,8 @@
   }
 
   &:active {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(94.85deg, #F71614 20.34%, #C80300 91.11%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      linear-gradient(94.85deg, #f71614 20.34%, #c80300 91.11%);
     box-shadow: none;
     top: 4px;
   }
