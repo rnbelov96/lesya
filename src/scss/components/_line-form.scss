@@ -22,6 +22,61 @@
     padding-top: 25px;
     padding-bottom: 25px;
   }
+
+  &_dark {
+    background: #161615;
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.07);
+    border-radius: 8px;
+    border: 2px solid $gold;
+
+    .line-form__title {
+      color: white;
+    }
+
+    .line-form__input-box {
+      border: 1px solid #ffffff;
+
+      @for $i from 1 through 3 {
+        &:nth-child(#{$i})::before {
+          background-image: url('/src/img/icons/form/1-#{$i}.svg');
+        }
+      }
+
+      &::before {
+        border: 5px solid #161615;
+        background-color: #161615;
+      }
+    }
+
+    .line-form__input {
+      color: white;
+      background-color: transparent;
+
+      &::-webkit-input-placeholder {
+        color: rgba(white, 0.5);
+      }
+
+      &::-moz-placeholder {
+        color: rgba(white, 0.5);
+      }
+
+      &:-ms-input-placeholder {
+        color: rgba(white, 0.5);
+      }
+
+      &:-moz-placeholder {
+        color: rgba(white, 0.5);
+      }
+    }
+
+    .line-form__text {
+      color: white;
+
+      button {
+        color: white;
+      }
+    }
+  }
 }
 
 .line-form__title {
