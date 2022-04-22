@@ -45,6 +45,17 @@
   padding-left: 46px;
   position: relative;
 
+  &_footer {
+    .header__phone {
+      @include reset-link(white);
+      color: white;
+    }
+
+    .header__callback {
+      color: white;
+    }
+  }
+
   @media (max-width: 650px) {
     padding-left: 40px;
   }

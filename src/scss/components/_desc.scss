@@ -23,7 +23,7 @@
 
   @media (max-width: 650px) {
     font-size: 18px !important;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
   }
 }
 
@@ -59,8 +59,14 @@
   }
 
   u {
-    text-underline-offset: 5px;
+    text-underline-offset: 6px;
+
+    @media (max-width: 650px) {
+      text-underline-offset: 3px;
+    }
   }
+
+  
 }
 
 .desc__subtitle {
