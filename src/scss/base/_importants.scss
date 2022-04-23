@@ -10,37 +10,37 @@
   color: #ce211f !important;
 
   &::-webkit-input-placeholder {
-    color: #ce211f;
+    color: #ce211f !important;
   }
 
   &::-moz-placeholder {
-    color: #ce211f;
+    color: #ce211f !important;
   }
 
   &:-ms-input-placeholder {
-    color: #ce211f;
+    color: #ce211f !important;
   }
 
   &:-moz-placeholder {
-    color: #ce211f;
+    color: #ce211f !important;
   }
 
   &:hover,
   &:focus {
     &::-webkit-input-placeholder {
-      color: #ce211f;
+      color: #ce211f !important;
     }
 
     &::-moz-placeholder {
-      color: #ce211f;
+      color: #ce211f !important;
     }
 
     &:-ms-input-placeholder {
-      color: #ce211f;
+      color: #ce211f !important;
     }
 
     &:-moz-placeholder {
-      color: #ce211f;
+      color: #ce211f !important;
     }
   }
 }
